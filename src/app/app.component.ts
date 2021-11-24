@@ -8,16 +8,14 @@ import { WeatherService } from './service/weather.service';
 })
 export class AppComponent {
   cityName: string = "";
+  weatherData:any;
 
   constructor(private _getWeatherData: WeatherService) { }
 
   searchCity() {
     this._getWeatherData.getWeatherData(this.cityName).subscribe(
-      data => {
-        console.log(data);
-      }, error => {
-        console.log(error);
-      }
+      data => {this.weatherData = JSON.stringify(data); console.log(data)},
+      error => console.log("Fetch Error", error)
     )
   }
 }
