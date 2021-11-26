@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap');
+.weather-box {
+    text-align: center;
+    height: auto;
+    width: 25%;
+    background-color: rgb(164, 203, 237);
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.weather-temp {
+    font-size: 80px;
+    margin-left: 20px;
+}
+
+.weather-city {
+ font-size: 30px;
+}
